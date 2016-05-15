@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::group(['prefix' => 'articles'], function()
+{
+	Route::get('view/{id}',
+		[
+        'uses' => 'Test_Controller@view',
+        'as' => 'articlesView'
+		]);
+});
