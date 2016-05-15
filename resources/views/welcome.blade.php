@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html>
     <head>
@@ -43,3 +44,13 @@
         </div>
     </body>
 </html>
+-->
+@extends('admin.template.main')
+
+@section('title', 'Home')
+
+
+@section('content')
+<h1>Holi a todos</h1>
+<input type="submit" class="btn btn-success" name="">
+@endsection
