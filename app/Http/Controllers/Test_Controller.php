@@ -16,6 +16,8 @@ class Test_Controller extends Controller
     	$article->category;
     	$article->user;
     	$article->tags;
-    	dd($article); 
+    	//dd($article); 
+
+    	return view('test.index', ['prueba' => $article]);
     }
 }
